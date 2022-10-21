@@ -38,7 +38,7 @@ public class IsValid {
         if(s.length() %2 != 0) return false;
 
         Stack stack = new Stack();
-        char[] brackets = new char[s.length()];
+        char[] brackets;
         brackets = s.toCharArray();
 
         for (char bracket : brackets){
@@ -59,9 +59,6 @@ public class IsValid {
                 }
             }
         }
-
-        if(!stack.isEmpty()) return false;
-
-        return true;
+        return stack.isEmpty();
     }
 }
