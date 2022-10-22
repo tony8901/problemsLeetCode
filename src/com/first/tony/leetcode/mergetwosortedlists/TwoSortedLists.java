@@ -1,6 +1,5 @@
 package com.first.tony.leetcode.mergetwosortedlists;
 
-import java.util.List;
 
 /**
  * Se le dan los encabezados de dos listas enlazadas ordenadas list1y list2.
@@ -30,10 +29,21 @@ public class TwoSortedLists {
     public TwoSortedLists() {
     }
 
-    public List mergeTwoLists(List list1, List list2) {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode resp= new ListNode();
 
+        if (list1 == null) return list2;
+        if (list2 == null) return list1;
 
-        return null;
+        if(list1.val <= list2.val) {
+            resp.val = list1.val;
+            resp.next = mergeTwoLists(list1.next, list2);
+        }
+        else {
+            resp.val = list2.val;
+            resp.next = mergeTwoLists(list1, list2.next);
+        }
+        return resp;
     }
 
 }
