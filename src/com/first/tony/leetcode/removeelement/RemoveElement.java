@@ -4,6 +4,8 @@ public class RemoveElement {
     public RemoveElement() {
     }
 
+
+    //funciona pero es un mounstruo, tengo que mejorar infinitamente mi logica
     public int removeElement(int[] nums, int val) {
         int k = 0;
         if(nums.length == 0 || nums.length == 1 && nums[0] == val) return k;
@@ -29,7 +31,7 @@ public class RemoveElement {
         return k;
     }
 
-    /*Respuesta en l foro de discusion (hay que revisarla pero creo que es la mas optima)
+    /*Respuesta en el foro de discusion (hay que revisarla pero creo que es la mas optima)
     public int removeElement(int[] nums, int val) {
 
     int nextPosition = 0;
