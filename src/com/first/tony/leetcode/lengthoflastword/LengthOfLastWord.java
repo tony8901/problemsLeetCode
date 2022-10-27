@@ -1,6 +1,6 @@
 package com.first.tony.leetcode.lengthoflastword;
 
-/*Dada una cadena s que consta de palabras y espacios, devuelve la
+/*Dada una cadena "s" que consta de palabras y espacios, devuelve la
 longitud de la última palabra de la cadena.
 Una palabra es una subcadena máxima que consta únicamente de caracteres que no son espacios.
 
@@ -22,7 +22,7 @@ Entrada: s = "luffy is still joyboy"
 
 Restricciones:
 1 <= s.length <= 10^4
-s consta únicamente de letras y espacios en inglés ' '.
+s consta únicamente de letras y espacios en inglés.
 Habrá al menos una palabra en s.
  */
 
@@ -36,8 +36,8 @@ public class LengthOfLastWord {
         return splittedWords[splittedWords.length-1].length();
     }
 
-    //pense que era el tamanno de la palabra mas larga, es solo el tamanno de la ultima
-    //esta funcion hace su trabajo, solo que eso no es lo que me piden.
+    //pensé que era el tamaño de la palabra más larga, es solo el tamaño de la última
+    //esta función hace su trabajo, solo que eso no es lo que me piden.
 
     /*
     public int lengthOfLastWord(String s) {
