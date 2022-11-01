@@ -1,14 +1,15 @@
 package com.first.tony;
 
-import com.first.tony.leetcode.plusone.PlusOne;
+
+import com.first.tony.leetcode.mysqrt.MySqrt;
 
 public class Main {
     public static void main (String[] args){
 
-        PlusOne x = new PlusOne();
-        int[] digits = {9,9,9};
-        for (int i : x.plusOne(digits)){
-            System.out.print(i + "_");
-        }
+        MySqrt xyz = new MySqrt();
+        System.out.println(xyz.mySqrt(56487));
+//        int x = 22;
+//        int y = 44;
+//        int z = Integer.parseInt(String.valueOf(x) + String.valueOf(y));
     }
 }
